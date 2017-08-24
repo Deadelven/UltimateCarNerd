@@ -1,3 +1,8 @@
 git clone
 git status
 git add
+git push
+git checkout
+git brancah
+git pull
+git rebase
