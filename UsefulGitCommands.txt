@@ -1,8 +1,11 @@
 git clone
+
 git status
+
 git add
-git push
 git checkout
-git brancah
+git branch
+git push
 git pull
+git merge
 git rebase
