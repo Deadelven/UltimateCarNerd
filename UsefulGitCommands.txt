@@ -9,3 +9,6 @@ git push
 git pull
 git merge
 git rebase
+
+
+This is not a git command
