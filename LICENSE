@@ -1,4 +1,8 @@
-                                 Apache License
+                            Modified Apache License
+                          Modified on August 23, 2017
+                           Modification Version 1.0
+                          
+                               Original License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -172,6 +176,14 @@
       defend, and hold each Contributor harmless for any liability
       incurred by, or claims asserted against, such Contributor by reason
       of your accepting any such warranty or additional liability.
+      
+   10. Licensor retains the right to change the license agreement between 
+       licensor and you at the discretion of licensor without giving notice.
+           
+           (a) It is your sole responsibility to monitor the license and 
+                adjust your use of licensed source to meet any new license
+                obligations.
+           
 
    END OF TERMS AND CONDITIONS
 
