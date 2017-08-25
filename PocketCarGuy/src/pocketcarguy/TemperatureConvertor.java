@@ -2,7 +2,7 @@
 package pocketcarguy;
 
 public class TemperatureConvertor {
-  
+
     
     //Convert Farenheight to celcius
     public static float ConvertToCelcius(float F)
