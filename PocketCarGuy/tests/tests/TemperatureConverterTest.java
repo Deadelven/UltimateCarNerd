@@ -72,7 +72,14 @@ public class TemperatureConverterTest {
         assertEquals(0, result, GlobalVariables.FloatDelta);
         
         
-        result = TemperatureConvertor.ConvertToCelcius(0);
+        result = TemperatureConvertor.ConvertToCelcius(-0);
         assertEquals(-17.7778, result, GlobalVariables.FloatDelta);
+
+        result = TemperatureConvertor.ConvertToCelcius(-3.8f);
+        assertEquals(-19.8889, result, GlobalVariables.FloatDelta);
+        
+        result = TemperatureConvertor.ConvertToCelcius(1234.5678f);
+        assertEquals(668.093222222, result, GlobalVariables.FloatDelta);
+        
     }
 }
