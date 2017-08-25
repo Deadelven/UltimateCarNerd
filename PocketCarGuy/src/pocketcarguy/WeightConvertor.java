@@ -11,13 +11,14 @@ public class WeightConvertor {
     return KG * GlobalVariables.KGToLBMultiplier;
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    //Convert input LB to KG
+    public static float LBToKGConvertor ( float LB)
+    {
+    if(LB == 0)return 0;
+    else
+    return LB * GlobalVariables.LBToKGMultiplier;
+         
+    }
+          
+
 }
