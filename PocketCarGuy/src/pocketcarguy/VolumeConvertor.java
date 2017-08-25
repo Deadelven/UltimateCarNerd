@@ -15,4 +15,8 @@ public class VolumeConvertor {
     //Convert all into cc then into final value
     
     
+    public static float ConvertLitersToGallons(float L){
+        return L * 0.26417f;
+    }
+    
 }
