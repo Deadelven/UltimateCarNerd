@@ -41,7 +41,26 @@ public void ConvertKWToHp(){
         assertEquals(670.5, result, GlobalVariables.FloatDelta);
 }
 
-     
+    
+
+
+@Test
+public void ConvertHPToKW(){
+  float result;
+        result = EnergyConvertor.ConvertHPToKW(0);
+        assertEquals(0.0f, result, GlobalVariables.FloatDelta);  
+    
+        result = EnergyConvertor.ConvertHPToKW(10);
+        assertEquals(7.4569f, result, GlobalVariables.FloatDelta);
+        
+        result = EnergyConvertor.ConvertHPToKW(-0);
+        assertEquals(0, result, GlobalVariables.FloatDelta);
+        
+        
+        result = EnergyConvertor.ConvertHPToKW(500);
+        assertEquals(372.8500f, result, GlobalVariables.FloatDelta);
+}
+
      
      
 }

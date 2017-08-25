@@ -8,6 +8,7 @@ public class GlobalVariables {
     public static float FloatDelta = 0.0001f;
  
     public static float KWToHPMultiplier = 1.3410f;
+    public static float HPToKWMultiplier = 0.7457f;
     
     
     
