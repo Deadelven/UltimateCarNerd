@@ -57,7 +57,13 @@ public class TemperatureConverterTest {
     
     @Test 
     public void  ConvertToCelsius(){
-        float result = TemperatureConvertor.ConvertToCelcius(32);
-        assertEquals(result, 0, 0.0f);
+        float result;
+        
+        result = TemperatureConvertor.ConvertToCelcius(32);
+        assertEquals(0, result, 0.0f);
+        
+        
+        result = TemperatureConvertor.ConvertToCelcius(0);
+        assertEquals(-17.7778, result, 0.0001f);
     }
 }
