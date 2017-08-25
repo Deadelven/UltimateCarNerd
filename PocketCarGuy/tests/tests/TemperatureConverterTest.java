@@ -13,6 +13,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import pocketcarguy.TemperatureConvertor;
+import pocketcarguy.GlobalVariables;
 
 /**
  *
@@ -28,31 +29,39 @@ public class TemperatureConverterTest {
     public void  ConvertToFarenheight(){
         float result;
         result = TemperatureConvertor.ConvertToFarenheight(0);
-        assertEquals(32.0f, result, 0.0f);
+        assertEquals(32.0f, result, GlobalVariables.FloatDelta);
         
         
         result = TemperatureConvertor.ConvertToFarenheight(1);
-        assertEquals(33.8f, result, 0.0f);
+        assertEquals(33.8f, result, GlobalVariables.FloatDelta);
         
         
         result = TemperatureConvertor.ConvertToFarenheight(5);
-        assertEquals(41.0f, result, 0.0f);
+        assertEquals(41.0f, result, GlobalVariables.FloatDelta);
         
         
         result = TemperatureConvertor.ConvertToFarenheight(15);
-        assertEquals(59.0f, result, 0.0f);
+        assertEquals(59.0f, result, GlobalVariables.FloatDelta);
         
         
         result = TemperatureConvertor.ConvertToFarenheight(100);
-        assertEquals(212.0f, result, 0.0f);
+        assertEquals(212.0f, result, GlobalVariables.FloatDelta);
         
         
         result = TemperatureConvertor.ConvertToFarenheight(-1);
-        assertEquals(30.2f, result, 0.0f);
+        assertEquals(30.2f, result, GlobalVariables.FloatDelta);
         
         
         result = TemperatureConvertor.ConvertToFarenheight(-0);
-        assertEquals(32.0f, result, 0.0f);
+        assertEquals(32.0f, result, GlobalVariables.FloatDelta);
+        
+        
+        result = TemperatureConvertor.ConvertToFarenheight(3.3f);
+        assertEquals(37.94f, result, GlobalVariables.FloatDelta);
+        
+        
+        result = TemperatureConvertor.ConvertToFarenheight(-3.3f);
+        assertEquals(26.06f, result, GlobalVariables.FloatDelta);
     }
     
     @Test 
@@ -60,10 +69,10 @@ public class TemperatureConverterTest {
         float result;
         
         result = TemperatureConvertor.ConvertToCelcius(32);
-        assertEquals(0, result, 0.0f);
+        assertEquals(0, result, GlobalVariables.FloatDelta);
         
         
         result = TemperatureConvertor.ConvertToCelcius(0);
-        assertEquals(-17.7778, result, 0.0001f);
+        assertEquals(-17.7778, result, GlobalVariables.FloatDelta);
     }
 }
