@@ -12,7 +12,9 @@ public class GlobalVariables {
     //KG and LB conversion
     public static float KGToLBMultiplier = 2.205f;
     public static float LBToKGMultiplier = 0.4536f;
-    
+    //Galons and Litres
+    public static float GToLMultiplier = 3.78541f;
+    public static float LToGMultiplier = 0.26417f;
     
     
     

@@ -1,6 +1,7 @@
 
 package pocketcarguy;
 
+import pocketcarguy.GlobalVariables;
 
 public class VolumeConvertor {
     //CC
@@ -16,7 +17,16 @@ public class VolumeConvertor {
     
     
     public static float ConvertLitersToGallons(float L){
-        return L * 0.26417f;
+        if( L == 0)return 0;
+        
+        else return L * GlobalVariables.LToGMultiplier;
+    }
+    
+    public static float ConvertGallonsToLitres(float G)
+    {
+        if(G == 0) return 0;
+        
+        else return G * GlobalVariables.GToLMultiplier;
     }
     
 }
