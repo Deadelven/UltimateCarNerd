@@ -11,4 +11,7 @@ git merge
 git rebase
 
 
+<<<<<<< HEAD
 This is not a git command
+=======
+>>>>>>> 657a0a078963f42334c9f226e302e2038a6ca3a4
