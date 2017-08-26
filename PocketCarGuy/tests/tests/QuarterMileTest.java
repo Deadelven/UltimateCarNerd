@@ -36,7 +36,7 @@ public class QuarterMileTest {
         assertEquals(15.14886f, result, GlobalVariables.FloatDeltaTime);
         
         result = QuarterMileCalculator.QuarterMileTime(280,1200);
-        assertEquals(12.305938, result, GlobalVariables.FloatDeltaTime);
+        assertEquals(12.305938f, result, GlobalVariables.FloatDeltaTime);
 
     
 }
